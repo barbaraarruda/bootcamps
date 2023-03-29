@@ -1,18 +1,18 @@
-## Getting Started
+# ANOTAÇÕES APRENDENDO A SINTAXE JAVA
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## ANATOMIA DAS CLASSES
 
-## Folder Structure
+---
+esse trecho foi copiado, com algumas poucas adaptações, do site [Java Básico](https://glysns.gitbook.io/java-basico/sintaxe/anatomia-das-classes) 
 
-The workspace contains two folders by default, where:
+**Arquivo .java**: todo arquivo .java deve começar com letra maiúscula. Se a palavra for composta, a segunda palavra deve ser também ser maiúscula.
+**Nome da classe no arquivo**: a classe deve possuir o mesmo nome do arquivo.java
+**Nome de variável**: toda variável deve ser escrita com letra minúscula, porém se a palavra for composta, a primeira letra da segunda palavra deverá ser MAIÚSCULA, exemplo: ano e anoFabricacao. O nome dessa prática para nomear variáveis dessa forma se chama ***camelCase***. 
+> Existe uma regra adicional para variáveis quando na mesma queremos identificar que ela não sofrerá alteração de valor, ex.: queremos determinar que uma variável de nome **br**  sempre representará **"Brasil"** e nunca mudará seu valor, logo, determinamos como escrita o código abaixo: _string BR = "Brasil"_
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
+#### minhas anotações
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Expressão {c:pink}**final**{/c} deixa que o valor declarado na variável nunca será alterado. 
