@@ -15,4 +15,4 @@ esse trecho foi copiado, com algumas poucas adaptações, do site [Java Básico]
 ---
 #### minhas anotações
 
-1. Expressão <font color=\"pink\">**final**</font> deixa que o valor declarado na variável nunca será alterado. 
+1. Expressão <span style="color:pink">**final**</span> deixa que o valor declarado na variável nunca será alterado. 
