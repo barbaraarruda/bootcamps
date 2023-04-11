@@ -1,5 +1,6 @@
 from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('ccadastro/', )
+    path('cadastro/',  views.cadastro, name="cadastro")
 ]
