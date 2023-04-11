@@ -1,0 +1,12 @@
+body{
+    color: white !important;
+}
+
+:root{
+     
+    --main-color: #201F1F;
+    --dark-color: #000000;
+    --contrast-color: #BE375F;
+    --differential-color: #0b0d5c;
+
+}
