@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body> 
+    <form action="cadastro.php" method="post">
+        <p><label for="name_resp">Nome do Tutor:</label><input type="text" name="name_resp" id="name_resp" required></p>
+        <p><label for="name">Nome do pet:</label><input type="text" name="nome" id="name" required></p>
+        <p><label for="email">Email:</label><input type="email" name="email" id="email" required></p>
+        <p><label for="age">Idade:</label><input type="date" name="idade" id="idade" required></p>
+        <p><label for="gender">Gênero:
+            <input type="radio" name="gender" value="male" id="genero">Masculino
+            <input type="radio" name="gender" value="female" id="genero">Feminino
+        </label></p>
+        <p><label for="horario">Horário: </label><input type="datetime-local" name="horario"></p>
+        <p><label for="service">Agendamento:
+            <br>
+            <input type="checkbox" name="tosa">Tosa
+            <br>
+            <input type="checkbox" name="banho">Banho
+            <br>
+            <input type="checkbox" name="escova">Escovação de dentes
+            <br>
+            <input type="checkbox" name="medico">Consulta
+             </label></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<!--ctrl shift p abre envelopação no vscode-->
+</html>
