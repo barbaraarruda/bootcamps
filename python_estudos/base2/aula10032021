@@ -1,0 +1,168 @@
+     
+"""
+Aula 09/03/2021
+ 
+Estruturas condicionais parte 2
+ 
+Estruturas conficionais dependente ou aninhada
+ 
+Imagine a seguinte situação:
+ 
+Exemplo 1:
+ 
+Se eu ganhar um aumento e o dolar diminuir o valor, vou viajar nas férias.
+ 
+ 
+Exemplo 2:
+Se eu encontrar o item que procuro e minha conta no banco estiver com saldo,
+vou comprar o item.
+ 
+ 
+Exemplo 3:
+Se o Paisandu ganhar e o Bangu marcar 5 gols e o time em segundo lugar não marcar
+nenhum gol, meu time não será rebaixado.
+ 
+ 
+Se (condição):
+    comandos ou ação
+senão:
+    comandos ou açõo
+ 
+ 
+Se (condição: Salário aumentar 100%):
+    comandos ou ação: Viajar para Disney
+senão-se (Condição: Salário aumentar 40%):
+    comandos ou ação: Viajar para o Nordeste
+senão:
+    comandos ou ação: Vou viajar para Caldas Novas
+ 
+Operações condicionais:
+and (As duas condições True) e or (Uma das condições True)
+ 
+ 
+Se (Condição: acao == 100):
+    comandos
+ 
+    Se (Condição dependente: acao == 101)
+        comandos
+ 
+Outra forma de escrever o mesmo código acima:
+ 
+var1 = 10
+var2 = 20
+ 
+condicao1 = (var2 > var1) => True - boal
+ 
+condicao2 = (var1 < var2) => True - boal
+ 
+Se (condiçao1 and condiçao2) => No operador "and", as duas confições precisam ser iguais
+    comandos
+ 
+var1 = 10
+var2 = 20
+ 
+condicao1 = (var1 < var2) => True
+ 
+condicao2 = (var2 > var1) => True
+ 
+Se (condicao1 or condicao2) = > No operador "or", as duas condições precisam ser diferentes
+    comandos
+ 
+ 
+Tabela Verdade
+ 
+True = 0
+False = 1
+ 
+and = e
+ 
+condicao1 | condicao2 | Resultado da condição
+ 
+0         | 0        | True
+1         | 1        | True
+0         | 1        | False
+1         | 0        | False
+ 
+or = ou
+ 
+condicao1 |  condicao2 | Resultado da condição
+ 
+0         | 0          | False
+1         | 1          | False
+0         | 1          | True
+1         | 0          | True
+ 
+ 
+"""
+# Portas lógicas usam números binários.
+ 
+# Porta lógica and = soma na algebra booleana
+# and = e = soma
+ 
+# var1 | var2 = Resultado
+# 0    | 0    = 0
+# 0    | 1    = 0
+# 1    | 0    = 0
+# 1    | 1    = 1
+ 
+# var1 = 10 # Decimal
+# var2 = 20 # Decimal
+ 
+# if (var1 == 10 and var2 != 20):
+#    print('0 ou True')
+# else:
+#    print('1 ou False')
+ 
+# var1  | var2 | condição |resultado
+# Fabio | Maria | False 1  | As variáveis são diferentes
+# 10      10      True  0    As variáveis são iguais
+ 
+#Exemplo 1:
+ 
+#Se eu ganhar um aumento de 100% o dolar diminuir o valor, vou viajar nas férias.
+ 
+# salario = 100
+# salario_com_aumento = 100
+ 
+# dolar_ontem = 5
+# dolar_hoje = 4
+ 
+# if (salario_com_aumento = salario * 2):
+#    if (dolar_hoje < dolar_ontem):
+#        print('Vou viajar para a Disney com a família!')
+#    else:
+#        print('Vou viajar para o Nordeste com a família!')
+# else:
+#    print('Vamos ficar em casa assistindo Netflix!')
+ 
+# Exemplo 2:
+ 
+# Se eu encontrar o item que procuro e minha conta no banco estiver com saldo suficiente,
+# vou comprar o item.
+ 
+# Exemplo 2:
+ 
+# Se eu encontrar o item que procuro e minha conta no banco estiver com saldo suficiente,
+# vou comprar o item.
+ 
+# if (condição)
+# then
+#  comandos
+#
+ 
+# item = 'Não'
+# valor_item = 100
+# conta = 99
+ 
+# var = (15 < 5)
+ 
+# print(type(var))
+ 
+ 
+# if (item == "Sim"):
+#  if (conta >= valor_item):
+#    print('Vou comprar o celular!')
+#  else:
+#    print('Vou procurar em outro site!')
+# else:
+#  print('Vou precisar aguardar ou guardar dinheiro para comprar o celular depois!')
