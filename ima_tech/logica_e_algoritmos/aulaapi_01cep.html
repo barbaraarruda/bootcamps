@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Exercício API - Cep</title>
+    <script>
+        function acao(){
+            //obter o valor do elemento ID
+            var cep = document.getElementById("cep").value;
+            ///alert(cep);
+
+            //requisição
+            //fetch('https://viacep.com.br/ws/'+cep+'/json/') essa é a mais antiga
+            fetch(`https://viacep.com.br/ws/${cep}/json/`) //o fetch trabalha com programação assíncrona. | com as crases, o uso é mais atualizado.
+            .then(retorno => retorno.json()) //o then é uma promessa, que vai retornar o resultado da requisição
+            .then(dados => {
+                //console.log(dados);
+                document.getElementById("estado").innerHTML = dados.uf;
+                document.getElementById("cidade").innerHTML = dados.localidade;
+                document.getElementById("bairro").innerHTML = dados.bairro;
+                document.getElementById("logradouro").innerHTML = dados.logradouro;
+            })
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" name="cep" id="cep" placeholder="Digite o CEP">
+        <input type="button" value="Obter dados" onclick="acao()">
+    </form>
+
+    <p id="estado"></p>
+    <p id="cidade"></p>
+    <p id="bairro"></p>
+    <p id="logradouro"></p>
+</body>
+</html>
