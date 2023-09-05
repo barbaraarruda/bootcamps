@@ -7,24 +7,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.projeto.exemplo01.modelo.Cargo;
-import br.com.projeto.exemplo01.repositorio.CargoRepositorio;
+import br.com.projeto.exemplo01.modelo.Colaborador;
+import br.com.projeto.exemplo01.repositorio.ColaboradorRepositorio;
 
 @RestController
-@RequestMapping("/cargos")
-public class CargoControle {
+@RequestMapping("/colaboradores")
+public class ColaboradorControle {
     
     @Autowired
-    private CargoRepositorio cargo_repositorio;
+    private ColaboradorRepositorio colaborador_repositorio;
 
     @GetMapping("/listar")
-    public Iterable<Cargo> listar(){
-        return cargo_repositorio.findAll();
+    public Iterable<Colaborador> listar(){
+        return colaborador_repositorio.findAll();
     }
 
     @PostMapping("/cadastrar")
-    public Cargo cadastrar(@RequestBody Cargo obj){
-        return cargo_repositorio.save(obj);
-        
+    public Colaborador cadastrar(@RequestBody Colaborador obj){
+        return colaborador_repositorio.save(obj);
     }
 }
