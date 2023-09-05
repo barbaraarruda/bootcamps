@@ -1,0 +1,18 @@
+State: O state do componente é similar as props, mas é privado e totalmente controlado
+pelo componente.
+Fonte: https://pt-br.reactjs.org/docs/state-and-lifecycle.html
+
+-------------------------------------------------------
+
+Diferença entre states e props:
+
+Props: São propriedades criadas juntamente com um componente,
+exemplo:<MeuComponente curso="ReactJS" />
+
+Importante: uma props não pode ser alterada, é como se fosse uma constante.
+
+State: Funciona como uma variável, sempre que modificado o conteúdo,
+os elementos que utilizam aquele state sofrem alteração.
+
+O state é um elemento privado, sendo assim, apenas terá acesso dentro
+do seu componente.
