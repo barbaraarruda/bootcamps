@@ -25,7 +25,7 @@ public class Exemplo03Application {
 
 			// Criar um aluno
 			Aluno aluno = new Aluno();
-			aluno.setAluno("Ralf");
+			aluno.setAluno("Bárbara");
 
 			// Cadastrar na tabela alunos
 			ar.save(aluno);
