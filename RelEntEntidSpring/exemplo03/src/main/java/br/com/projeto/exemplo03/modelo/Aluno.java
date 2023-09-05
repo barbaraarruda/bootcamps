@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
@@ -25,6 +27,11 @@ public class Aluno {
     private String aluno;
 
     @ManyToMany
+    @JoinTable(
+        name = "tabela_auxiliar",
+        joinColumns = {@JoinColumn(name = "codigo_aluno", referencedColumnName = "codigo")},
+        inverseJoinColumns = {@JoinColumn(name = "codigo_curso", referencedColumnName = "codigo")}
+    )
     private List<Curso> cursos = new ArrayList<>();
 
 }

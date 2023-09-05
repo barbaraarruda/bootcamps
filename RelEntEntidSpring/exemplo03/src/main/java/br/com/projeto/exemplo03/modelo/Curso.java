@@ -24,7 +24,7 @@ public class Curso {
 
     private String curso;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "cursos")
     private List <Aluno> alunos = new ArrayList<>();
 
 }
