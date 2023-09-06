@@ -1,3 +1,10 @@
 body{
     background-color:bisque;
 }
+
+.minhaClasse{
+    width: 500px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    
+}
